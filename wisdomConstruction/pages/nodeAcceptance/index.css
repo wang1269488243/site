@@ -3,9 +3,9 @@
 }
 
 .node-acceptance .head {
-    height: 36px;
-    line-height: 36px;
-    background: linear-gradient(to right,#2190BF, #02085E);
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(to right,rgba(19,144,255,.59) 35%, rgba(125,114,245,.2) 100%);
 }
 
 .node-acceptance #start, .node-acceptance #end {
@@ -33,4 +33,45 @@
 }
 .node-acceptance .body {
     border: 1px solid rgba(26,208,253,0.2);
+    height: 600px;
+}
+
+.layui-table-view {
+    margin:10px  0 0 0;
+    border-width: 0px;
+    
+}
+
+.layui-table-view table {
+    background: rgba(19,54,122,0.5);
+    border: 1px solid rgba(26,208,253,0.2);
+}
+.layui-table-header {
+    background: none;
+    border: none;
+}
+.layui-table-view .layui-table thead tr {
+    background: linear-gradient(to right,#2190BF, #02085E);
+}
+
+.layui-table-view .layui-table th {
+    padding: 8px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.layui-table tbody tr td {
+    color: #fff;
+}
+
+.layui-table tbody tr td a {
+    color: rgba(51,222,192);   
+}
+
+.layui-table tbody tr:hover {
+    background: none;
+}
+
+.layui-table[lay-even] tbody tr:nth-child(even) {
+    background: rgba(51,222,192,0.2);
 }
