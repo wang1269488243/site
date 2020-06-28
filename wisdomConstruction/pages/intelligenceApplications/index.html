@@ -8,19 +8,82 @@
 </head>
 <body>
     <div class="intelligence-application">
+        <div class="right">
+            <div class="head">
+                <p id="title">应用中心 <i class="layui-icon layui-icon-up"></i></p>
+            </div>
+            <ul class="content" id="menu">
+                <li class="active">安全帽识别</li>
+                <li>入侵警告识别</li>
+            </ul>
+        </div>
+       <div class="left">
+       <div class="top">
         <div class="left-tab">
             <div class="tab-head">
                 <span>数据分析 </span>
                 <select>
                 <option value="1">当日</option>
                 <option value="2">当月</option>
-                <option value="3">全部</option>
+                <option value="3" selected>全部</option>
               </select>
             </div>
             <div id="tab-content" style="width: 248px; height: 170px;">
 
             </div>
+            <div class="tab-more">
+                <div class="more-f">
+                    <p>0</p>
+                    <p>总异常情况</p>
+                </div>
+                <div class="more-s">
+                    <div class="s-1">
+                        <p>0</p>
+                        <p>当月异常情况</p>
+                    </div>
+                    <div class="s-2">
+                        <p>0</p>
+                        <p>当日异常情况</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="main">
+            <div class="main-head">
+                <p>
+                    <span>异常信息：<i>0</i></span>
+                    <a>更多></a>
+                </p>
+                <p>最新动态</p> 
+            </div>
+            <div id="main">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="img/timg.jpg" alt="">
+                    </div>
+                    <div class="item-des">
+                        <p>生活区门岗生活...</p>
+                        <p>2020.06.28 15.30.51</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="bottom">
+        <div class="bottom-head">
+            <span>实时动态 </span>
+            <select id="bottom-select">
+            <option value="1" selected>近7天</option>
+            <option value="2">近30天</option>
+            <option value="3" >近90天</option>
+          </select>
+        </div>
+        <di id="bottom-content" style="height: 223px;">
+
+        </di>
+       </div>
+       </div>
+       
     </div>
 </body>
 </html>
