@@ -34,7 +34,7 @@ $('.menu-right ul li').on('click',function(){
 	}else if(index == 2){
 		$('.contentbody').load('pages/dataManagement/index.html');
 	}else if(index == 3){
-		$('.contentbody').load('./nodeAcceptance.html');
+		$('.contentbody').load('pages/nodeAcceptance/index.html');
 	}else if(index == 4){
 		$('.contentbody').load('./mySite.html');
 	}

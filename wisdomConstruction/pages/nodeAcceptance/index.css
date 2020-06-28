@@ -1,0 +1,36 @@
+.node-acceptance {
+    margin: 10px;
+}
+
+.node-acceptance .head {
+    height: 36px;
+    line-height: 36px;
+    background: linear-gradient(to right,#2190BF, #02085E);
+}
+
+.node-acceptance #start, .node-acceptance #end {
+    width: 272px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #eee;
+    background: none;
+    outline: 0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.node-acceptance #btn {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.node-acceptance .body {
+    border: 1px solid rgba(26,208,253,0.2);
+}

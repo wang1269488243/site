@@ -267,9 +267,12 @@
             const { elem, data: { id } } = obj;
             $(elem).parent().children().removeClass('active');
             $(elem).addClass('active');
-            filesTable.reload({
-                data: dataSource[id],
-            });
+            // todo 假装异步接口获取数据
+            setTimeout(() => {
+                filesTable.reload({
+                    data: dataSource[id],
+                });
+            }, 500);
         },
     });
     // 默认选中最后一条数据
