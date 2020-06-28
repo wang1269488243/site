@@ -3,6 +3,7 @@
 }
 
 .node-acceptance .head {
+    padding-left: 20px;
     height: 50px;
     line-height: 50px;
     background: linear-gradient(to right,rgba(19,144,255,.59) 35%, rgba(125,114,245,.2) 100%);
