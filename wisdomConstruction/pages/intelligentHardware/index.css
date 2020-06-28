@@ -1,0 +1,17 @@
+.intelligent-hardware {
+    margin: 10px;
+}
+
+.left {
+    float: left;
+    width: 150px;
+}
+
+.right {
+    float: right;
+    width: 220px;
+}
+
+.content {
+    margin: 0 160px 230px 0;
+}

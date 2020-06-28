@@ -28,7 +28,7 @@ $('.menu-right ul li').on('click',function(){
 	$('.menu-left ul li').removeClass('menu-choose');
 	var index = $(this).index();
 	if(index == 0){
-		$('.contentbody').load('./intelligentHardware.html');
+		$('.contentbody').load('pages/intelligentHardware/index.html');
 	}else if(index == 1){
 		$('.contentbody').load('pages/intelligenceApplications/index.html');
 	}else if(index == 2){
