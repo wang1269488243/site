@@ -30,7 +30,7 @@ $('.menu-right ul li').on('click',function(){
 	if(index == 0){
 		$('.contentbody').load('./intelligentHardware.html');
 	}else if(index == 1){
-		$('.contentbody').load('./intelligenceApplications.html');
+		$('.contentbody').load('pages/intelligenceApplications/index.html');
 	}else if(index == 2){
 		$('.contentbody').load('pages/dataManagement/index.html');
 	}else if(index == 3){
