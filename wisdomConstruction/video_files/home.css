@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("common.css");
+
+/*-----------------------------------------
+	首页
+-----------------------------------------*/
+.perHomeLeft,.perHomeRight,.personCenter { height: 100%; display: flex; flex-direction: column; justify-content: space-between;   }
+.perHomeLeft,.perHomeRight { width: 25%; }
+
+/* -------左侧------ */
+/* 项目概要 */
+.regBox { margin-bottom: 1rem; flex: 1; min-height: 0; overflow: hidden; }
+.regBox .regCon { padding: 1rem; flex: 1; font-size: 1.2rem;  overflow: hidden;}
+.regCon .regCon_right { width: 14rem; height: 7rem; float: right;}
+.regCon .regCon_right img { width: 100%; height: 100%; max-width: 100%; max-height: 100%; }
+
+/*  人员分析  */
+.perHomeLeft .presonBox { height: 30rem; }
+.presonContent { flex: 1;  ;}
+.presonContent .personStat { height: 7.5rem; display: flex; border: 1px solid rgba(255,255,255,0.20); align-items: center; }
+.presonContent .personStat li { width: 33.33%; text-align: center;}
+.presonContent .personStat li em { padding-bottom: 0.5rem; display: block; font-size: 3rem;}
+.presonContent .personRatioCon { flex: 1; }
+
+/* -------中间------ */
+.personCenter { margin: 0 1rem; width: calc(50% - 2rem); }
+/* 轮播图 */
+.personImgBoxs { margin-bottom: 1rem; height: calc(100% - 17rem); display: flex; flex-direction: column; overflow: hidden; }
+.large_box { height: calc(100% - 7rem); border-radius: 2px; overflow:hidden; }
+.large_box ul,.large_box li { height: 100%; overflow: hidden; }
+.large_box li img { width: 100%; height: 100%; display:block;}
+.small_box { width: 100%; margin-top:1rem; height: 6rem; overflow: hidden;}
+.small_box .small_list { height:100%; position: relative; float:left; width: calc(100% - 7rem); overflow:hidden;}
+.small_box .small_list ul { width: 100%; overflow: hidden; }
+.small_box .small_list ul li { margin-left: 1rem; position:relative; float: left; width: 11rem; }
+.small_box .small_list ul li img { width: 100%; height: 100%; display:block; }
+.small_box .small_list ul li .bun_bg { display: block; position: absolute; top:0;left:0; width: 11rem; height:100%; background:#000;
+	filter:alpha(opacity=50);-moz-opacity:.5;-khtml-opacity:.5;opacity:.5; }
+.small_box .small_list ul li.on .bun_bg{ display: none; }
+.small_box .btn { width: 3rem; height:100%; background: #003698; border-radius: 2px; cursor:pointer; position: relative; }
+.small_box .btn:after { content: ''; width: 2.5rem; height: 2.5rem; border-left: 5px solid #1AD0FD; border-top: 5px solid #1AD0FD; border-radius: 0.2rem;
+	transform: rotate(-45deg); position: absolute; top: 25%; }
+.small_box .left_btn { float: left; }
+.small_box .left_btn:after { left: 30%;  }
+.small_box .right_btn { float: right; }
+.small_box .right_btn:after { right: 30%; transform: rotate(135deg); }
+/* 里程碑 */
+.perMilepost { height: 16rem;}
+.perMilepost .perMileposteContent { flex: 1; display: flex; align-items: center; }
+.perMileposteContent .timeProject { padding: 0 1.5rem; font-size: 1.5rem; text-align: center; }
+.perMileposteContent .timeProject em { padding-top: 1rem; display: block; font-size: 2.2rem;  }
+/*--图片切换效果--*/
+.main_visual { flex: 1; height: 12.5rem; overflow: hidden; position: relative; }
+.main_image { height: 100%; overflow: hidden; position: relative; }
+.main_image .rollImage { height: 100%; overflow: hidden; position: absolute; top: 0; left: 0; }
+.main_image .rollList { float: left; width: 100%; height: 100%; position: relative; overflow: hidden; }
+.main_image .rollList img { display: block; height: 100%; position: absolute; left: 50%; transform: translateX(-50%); }
+.lunbo { margin: 0 3rem; display: flex; height: 100%; align-items: center; }
+.lunbo li { padding-top: 4rem; width: 16.67%; text-align: center; font-size: 1.1rem; position: relative; }
+.lunbo li::after { content: ''; width: 100%; height: 1rem; background: rgba(51,222,192,0.50);  position: absolute; left: 0; top: 1.8rem;}
+.lunbo li::before { content: ''; width: 2.2rem; height: 2.2rem; background: rgba(51,222,192,0.50); border-radius: 50%;
+	position: absolute; left: 50%; top: 1.2rem; transform: translateX(-50%);}
+.lunbo li:first-child::after { width: 50%; left: 50%; border-top-left-radius: 0.4rem; border-bottom-left-radius: 0.4rem; }
+.lunbo li:last-child::after { width: 50%; right: 50%; border-top-right-radius: 0.4rem; border-bottom-right-radius: 0.4rem; }
+.lunbo li .circle { display: block; width: 100%; height: 0.6rem; background: #33DEC0; position: absolute; left: 0; top: 2rem; opacity: 0;}
+.lunbo li .circle::after { content: ''; width: 1.6rem; height: 1.6rem; background: #33DEC0;  border-radius: 50%;
+	position: absolute; left: 50%; top: -0.5rem; transform: translateX(-50%);}
+.lunbo li .circle::before { content: ''; margin-left: 0.2rem; width: 1.6rem; height: 1.6rem; background: url(../images/cancel.png) no-repeat left top; background-size: 1.3rem auto;
+	position: absolute; left: 50%; top: -0.1rem; transform: translateX(-50%); z-index: 1;}
+.lunbo li:first-child .circle { width: 50%; left: 50%; border-top-left-radius: 0.4rem; border-bottom-left-radius: 0.4rem; }
+.lunbo li:first-child .circle::after { left: 0%; }
+.lunbo li:first-child .circle::before { left: 0%; }
+.lunbo li:last-child .circle { width: 50%; right: 50%; border-top-right-radius: 0.4rem; border-bottom-right-radius: 0.4rem; }
+.lunbo li:last-child .circle::after { left: 100%; }
+.lunbo li:last-child .circle::before { left: 100%; }
+.lunbo li.UnEnd .circle { opacity: 1; }
+.lunbo li.UnEnd:first-child { }
+/* .lunbo li.lastUnEnd { } */
+
+/*切换点*/
+.main_visual .flicking_con { position: absolute; bottom: 0.5rem; left: 45%; width: 100%; height: 1.2rem; z-index: 999; display: none; }
+.main_visual .flicking_con a { margin: 0.05rem 0.25rem; float: left; width: 0.5rem; height: 0.5rem; display: block; background: rgba(51,222,192,0.50); border-radius: 50%; text-indent:-1000px; }
+.main_visual .flicking_con a.on { margin-top: 0; background: rgba(51,222,192,1); width: 0.75rem; height: 0.55rem; }
+/*左右箭头*/
+.main_visual #btn_prev,.main_visual #btn_next { display: block!important; width: 2rem!important; height: 2rem!important; border-left: 0.4rem solid rgba(51,222,192,0.50); 
+	border-top: 0.4rem solid rgba(51,222,192,0.50); border-radius: 0.2rem; transform: rotate(-45deg); position: absolute; top: 36%; z-index:11111;}
+.main_visual #btn_prev{ left: 4px;}
+.main_visual #btn_next{  right: 4px; transform: rotate(135deg); }
+
+/* -------右侧------ */
+/* 天气情况 */
+.WeatherBox { height: 21rem;  }
+.weatherContent { padding: 1rem 0 1rem 1rem; flex: 1; display: flex; }
+.weatherContent .weatherCon { flex: 1; display: flex; flex-direction: column; }
+.weatherCon .weatherToday { padding: 0 1rem 1rem; display: flex; flex: 1; align-items: center;  }
+.weatherCon .weatherToday .weatherImg img { width: 5rem; }
+.weatherCon .weatherToday .tempWind { flex: 1; text-align: center; }
+.weatherCon .weatherToday .tempWind span { display: block; }
+.weatherCon .weatherToday .tempWind .temp { padding-bottom: 1rem; font-size: 2.2rem;}
+.weatherCon .weaHumidity,.weatherCon .weaPressure { padding: 0.75rem 0 0.2rem 2.75rem; margin-left: 0.75rem; background: url(../images/Humidity.png) no-repeat left center; background-size: 1.8rem auto; }
+.weatherCon .weaPressure { background-image: url(../images/Pressure.png); }
+.weatherContent .weatherConTom { width: 7.2rem; text-align: center; border-left: 1px solid #312BA0; font-size: 1.25rem; }
+.weatherContent .weatherConTom p { padding-bottom: 0.5rem;}
+.weatherContent .weatherConTom .date { font-size: 1.5rem; }
+.weatherContent .weatherConTom .weather img { margin: 0.25rem auto; width: 3rem; display: block;}
+.weatherContent .weatherConTom .wind img,.weatherCon .weatherToday .tempWind .wind img { margin-right: 0.3rem; width: 1.6rem; vertical-align: -0.25rem;}
+/* 设备统计 */
+.perHomeEquBox { margin-top: 1rem; flex: 1; min-height: 0; overflow: hidden;  }
+.perHomeEquBox .equCon { padding: 1rem 0.75rem 1rem 2rem; flex: 1; }
+.equCon .equConTab { padding-bottom: 0.25rem; display: flex; font-size: 1.5rem;}
+.equCon .equConTab span,.equCon .equConList li span { flex: 1; text-align: center; }
+.equCon .equConTab span:nth-child(1),.equCon .equConList li span:nth-child(1) { width: 2rem; text-align: left; }
+.equCon .equConList li { padding-top: 0.45rem; display: flex; font-size: 1.2rem; }
+/* 环境 */
+.proHomeAmit { height: 18rem; }
+.proHomeAmit .AmitList { height: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; }
+.proHomeAmit .AmitList li { padding: 1rem 0 0 1.75rem; margin-top: 0.75rem; width: calc(50% - 0.45rem); height: calc(50% - 0.75rem); 
+  background-image: linear-gradient(270deg, rgba(125,114,245,0.02) 0%, rgba(19,144,255,0.59) 100%);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.09); border-radius: 2px; position: relative; }
+.proHomeAmit .AmitList li .iconBar { position: absolute; right: 0.5rem; bottom: 0.5rem; width: 3.5rem;}
+.proHomeAmit .AmitList li .iconBar img { width: 100%;}
+.proHomeAmit .AmitList li .name { padding-bottom: 0.2rem; font-size: 1.55rem; }
+.proHomeAmit .AmitList li .value em { margin-right: 0.25rem; font-size: 2.5rem; }
+
+/* -------右侧------ */
+
+@media screen and  (max-width: 900px) {
+	body { overflow-x: auto; }
+	#indexBox { width: 900px; }
+}

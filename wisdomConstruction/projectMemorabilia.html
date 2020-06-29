@@ -1,3 +1,118 @@
 <div id="projectMemorabilia">
-	项目大事记
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<!--swiper框架样式-->
+<link rel="stylesheet" type="text/css" href="statics/css/swiper-3.4.2.min.css" />
+
+<!--主要样式-->
+<link rel="stylesheet" type="text/css" href="statics/css/style.css" />
+
+<!--插件-->
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="statics/js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<div class="product-section product-features">
+  <div class="product-title">项目大事记</div>
+  <div class="product-wrapper">
+    <div class="product-body swiper-container">
+      <ul class="features-slide swiper-wrapper">
+        
+        <li class="features-item swiper-slide">
+          <h3>2020年3月4日</h3>
+          <i></i> <a class="features-info">
+          <p class="features-info-i"></p>
+          <p class="features-info-s"> 安全质量大会暨“安全官”</p>
+<p class="features-info-s">新城河项目安全质量大会暨“安全官”启动仪式</p>
+<p class="features-info-s">一、活动主题：</p>
+<p class="features-info-s">保安全、保质量、重承诺</p>
+<p class="features-info-s">安全问题人人有责，人人都是安全官</p>
+<p class="features-info-s">二、活动时间和地点</p>
+<p class="features-info-s">2020年5月25日，10:00-11:30，2#地块11#楼南场地</p>
+<p class="gongdiimg"><img src="statics/images/gongdi1.jpg"/></p>
+          </a> </li>
+          
+          <li class="features-item swiper-slide">
+          <h3>2020年4月4日</h3>
+          <i></i> <a class="features-info">
+          <p class="features-info-i"></p>
+          <p class="features-info-s"> 新城河项目安全4月安全大会</p>
+ <p class="features-info-s">10:00-10:20 施工负责人对工人进行项目安全和现状介绍</p>
+ <p class="features-info-s">10:20-10:40 对项目工人进行安全教育</p>
+ <p class="features-info-s">10:40-11:00 施工负责人对工人现场施工安全提出整改要求</p>
+ <p class="features-info-s">11:00-11:20为参加大会工人发放慰问礼品 </p>
+ <p class="gongdiimg"><img src="statics/images/gongdi2.png"/></p>
+          </a> </li>
+       
+       <li class="features-item swiper-slide">
+          <h3>2020年5月4日</h3>
+          <i></i> <a class="features-info">
+          <p class="features-info-i"></p>
+          <p class="features-info-s"> 新城河项目安全5月安全大会</p>
+ <p class="features-info-s">一、活动主题：</p>
+ <p class="features-info-s">保安全、保质量</p>
+ <p class="features-info-s">二、活动时间和地点</p>
+ <p class="features-info-s">2020年5月4日，10:00-11:20，2#地块综合讲评台</p>
+ <p class="features-info-s">三、大会议程</p>
+ <p class="gongdiimg"><img src="statics/images/gongdi1.jpg"/></p>
+          </a> </li>
+          
+          <li class="features-item swiper-slide now">
+          <h3>2020年6月15日</h3>
+          <i></i> <a class="features-info">
+          <p class="features-info-i"></p>
+          <p class="features-info-s"> 新城河项目安全6月大会</p>
+ <p class="features-info-s">一、活动主题：</p>
+ <p class="features-info-s">保安全、保质量</p>
+ <p class="features-info-s">二、活动时间和地点</p>
+ <p class="features-info-s">2020年6月15日，10:00-11:20，2#地块综合讲评台</p>
+ <p class="features-info-s">三、大会议程</p>
+ <p class="gongdiimg"><img src="statics/images/gongdi2.png"/></p>
+          </a> </li>
+          <li class="features-item swiper-slide dark">
+          <h3>2020年7月15日</h3>
+          <i></i> <a class="features-info">
+          <p class="features-info-i"></p>
+          <p class="features-info-s"> 新城河项目安全7月大会</p>
+ <p class="features-info-s">一、活动主题：</p>
+ <p class="features-info-s">保安全、保质量</p>
+ <p class="features-info-s">二、活动时间和地点</p>
+ <p class="features-info-s">2020年6月15日，10:00-11:20，2#地块综合讲评台</p>
+ <p class="features-info-s">三、大会议程</p>
+<p class="features-info-s">序号 时间 议程内容</p>
+<p class="features-info-s">4 11：05-11：10 ‘安全官’宣誓（项目总带领安全官、全体工人）</p>
+          </a> </li>
+      </ul>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next swiper-button-disabled"></div>
+  </div>
+</div>
+
+<!---调用方法--> 
+<script type="text/javascript">
+$(function() {
+	var mySwiper = new Swiper(".swiper-container", {
+		slidesPerView:3, //默认是显示4个
+		initialSlide: 999, //默认从第几个显示，999是为了让右边没有
+		spaceBetween: 0, //间距
+		speed: 1000,//速度
+		prevButton: ".swiper-button-prev", //左右按钮
+		nextButton: ".swiper-button-next"
+	})
+	$('.features-item .features-info').on('mouseenter',function(){
+		$(this).find('.gongdiimg').show()
+	})
+	$('.features-item .features-info').on('mouseleave',function(){
+		$(this).find('.gongdiimg').hide()
+	})
+})
+</script>
+</body>
+</html>
 </div>

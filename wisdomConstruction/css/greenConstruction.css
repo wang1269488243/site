@@ -1,0 +1,122 @@
+#greenConstruction{
+	margin-top: 50px;
+}
+.sq{
+	float: left;
+	width: 31%;
+}
+.weather{
+	float: left;
+	width: 30%;
+}
+.weather1{
+	float: left;
+	width: 30%;
+}
+.sq {
+	margin: 20px auto;
+	height: 300px;
+	/*background-color: #fff;*/
+	border: 1px solid rgb(33, 144, 191);
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 1% 0 1%;
+}
+.sq-con{
+	margin-top: 10px;
+}
+.sq-title {
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-weight: bold;
+	background: linear-gradient(to right, #2190BF, #02085E);
+	/*text-align: center;*/
+	
+}
+
+.layui-icon-notice {
+	margin-right: 8px;
+	font-size: 16px;
+}
+.weather {
+	margin: 20px auto;
+	height: 300px;
+	/*background-color: #fff;*/
+	border: 1px solid rgb(33, 144, 191);
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 1% 0 2%;
+}
+
+.weather-title {
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-weight: bold;
+	background: linear-gradient(to right, #2190BF, #02085E);
+	/*text-align: center;*/
+}
+
+.layui-icon-light {
+	margin-right: 8px;
+	font-size: 16px;
+}
+.weather1 {
+	margin: 20px auto;
+	height: 300px;
+	/*background-color: #fff;*/
+	border: 1px solid rgb(33, 144, 191);
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 2% 0 1%;
+}
+
+.weather1-title {
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-weight: bold;
+	background: linear-gradient(to right, #2190BF, #02085E);
+	/*text-align: center;*/
+}
+
+.layui-icon-light {
+	margin-right: 8px;
+	font-size: 16px;
+}
+.huanjing {
+	float: left;
+	width: 95.5%;
+	margin: 2%;
+	height: 300px;
+	/*background-color: #fff;*/
+	border: 1px solid rgb(33, 144, 191);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.huanjing-title {
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-weight: bold;
+	background: linear-gradient(to right, #2190BF, #02085E);
+	/*text-align: center;*/
+}
+
+.layui-icon-chart-screen {
+	margin-right: 8px;
+	font-size: 16px;
+}
+
+.weather-con img{
+	height: 259px;
+}
+.weather1-con img{
+	height: 259px;
+}

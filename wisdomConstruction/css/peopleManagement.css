@@ -1,0 +1,157 @@
+#peopleManagement{
+	padding: 20px;
+}
+#peopleManagement>div{
+	float: left;
+}
+
+#peopleManagement .left {
+	width: 20%;
+	height: 600px;
+	border: 1px solid rgb(33, 144, 191);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.left-title {
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-weight: bold;
+	background: linear-gradient(to right, #2190BF, #02085E);
+	/*text-align: center;*/
+}
+.layui-icon-user{
+	margin-right: 8px;
+}
+.left-cont ul li{
+	height: 40px;
+	line-height: 40px;
+}
+.left-cont ul li p:nth-child(1){
+	float: left;
+	margin-left: 10px;
+}
+.left-cont ul li p:nth-child(2){
+	float: right;
+	margin-right: 10px;
+}
+
+#peopleManagement .center{
+	width: 57%;
+	height: 600px;
+	box-sizing: border-box;
+	margin: 0 1.3%;
+}
+#peopleManagement #people-anliase {
+	/*margin: 0 20px 20px 20px;*/
+	margin-bottom: 20px;
+	width: 100%;
+	height: 300px;
+	border: 1px solid rgb(33, 144, 191);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.people-anliase-title {
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-weight: bold;
+	background: linear-gradient(to right, #2190BF, #02085E);
+	/*text-align: center;*/
+}
+.layui-icon-table{
+	margin-right: 8px;
+}
+
+#peopleManagement #people-now {
+	/*margin: 0 20px 20px 20px;*/
+	width: 100%;
+	height: 280px;
+	border: 1px solid rgb(33, 144, 191);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.people-now-title {
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	font-weight: bold;
+	background: linear-gradient(to right, #2190BF, #02085E);
+	/*text-align: center;*/
+}
+.layui-icon-table{
+	margin-right: 8px;
+}
+
+#people-now-cont>div{
+	float: left;
+	width: 50%;
+}
+.peoplelist{
+	float: left;
+	margin-left: 65px;
+}
+.peoplelist p{
+	text-align: center;
+	margin: 10px;
+	font-size: 16px;
+}
+#peopleimg{
+	position: relative;
+	margin-left: 100px;
+}
+#peopleimg img{
+	animation: loading 6s linear infinite;
+	display: inline-block;
+}
+
+#peopleimg p:nth-child(2){
+	position: absolute;
+	top: 50px;
+	left: 75px;
+	font-size: 24px;
+	color: #00C1B3;
+	font-weight: bold;
+}
+#peopleimg p:nth-child(2){
+	position: absolute;
+	top: 50px;
+	left: 75px;
+	font-size: 24px;
+	color: #00C1B3;
+	font-weight: bold;
+}
+#peopleimg p:nth-child(3){
+	position: absolute;
+	top: 80px;
+	left: 50px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.people-now-cont-right{
+	margin-top: 20px;
+	padding-left: 50px;
+	box-sizing: border-box;
+}
+
+#peopleManagement .right{
+	width: 20%;
+	height: 600px;
+	border: 1px solid rgb(33, 144, 191);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes loading {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }

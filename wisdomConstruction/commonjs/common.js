@@ -5,7 +5,7 @@
 //
 //layer.msg('Hello World');
 //});
-
+$('.contentbody').load('./index.html');
 //菜单切换页面内容逻辑
 $('.menu-left ul li').on('click',function(){
 	$(this).addClass('menu-choose').siblings().removeClass('menu-choose');

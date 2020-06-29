@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("common.css");
+
+/*-----------------------------------------
+	资料管理
+-----------------------------------------*/
+.file_log { width: 28rem;}
+.file_log_box { padding: 0.5rem; height: calc(100% - 3.5rem); }
+.ztree li a,.ztree li a.curSelectedNode { color: #fff !important; }
+.ztree li a.curSelectedNode { background: rgba(51,222,192,0.9)!important; border-color: rgba(51,222,192,0.9)!important; opacity: 1!important; }
+
+
+/* -------列表------ */
+.file_listBox { margin-left: 1rem; flex: 1;}
+.fileTableBox { height: calc(100% - 3.5rem); }
+.file_table { width: 100%; text-align: center; }
+.file_table th { font-weight: normal;}
+.file_table td { line-height: 3.5rem; }
+.fileTableBox .file_table td:first-child { padding-left: 0.75rem;}
+.fileTableBox .file_table td:last-child { padding-right: 0.75rem;}
+.fileTableBox .file_table tr:nth-child(2n) { background: rgba(51,222,192,0.2); }
+.fileTableBox .file_table td a { color: rgba(51,222,192,1);}
+
+/*-----------------------------------------
+	节点验收
+-----------------------------------------*/
+.nodeConBox { flex: 1; }
+.nodeBoxList { padding: 1rem 1rem 1rem 0; height: calc(100% - 5rem); display: flex; flex-direction: column;  }
+.listFlex { flex: 1;  }
+.listBox { display: flex; flex-wrap: wrap;  }
+.listBox li { padding: 1rem; margin: 0 0 1rem 1rem; /* width: calc(25% - 0.75rem); */  min-width: 22.55rem;/* width: 28rem; */ height: 10rem; overflow: hidden;
+	background: linear-gradient(to right,rgba(19,144,255,.5) 35%, rgba(125,114,245,.2) 100%); border-radius: 0.2rem; }
+.listBox li dl { display: flex; height: 100%; }
+.listBox li dl dt { width: 40%; max-width: 14rem; background-position: center; background-repeat: no-repeat; background-size: auto 100%; }
+.listBox li dl dt img,.listBox li dl dt a { display: block; width: 100%; height: 100%; }
+.listBox li dl dt .nameText { width: 5rem; height: 5rem; line-height: 5rem; font-size: 3rem; }
+.listBox li dl dt .nameText,.LogContent .LogConList li dt .nameText { display: block; border-radius: 50%;
+    background: rgba(51,222,192,0.5); text-align: center; color: #fff;  }
+.listBox li dl dd { padding-left: 1rem; width: 60%; display: flex; flex-direction: column; justify-content: space-between;}
+.listBox li dl dd .time { height: 1.5rem; overflow: hidden; }
+.listBox li dl dd .infoText { flex: 1;  }
+.listBox li dl dd .infoText .title { margin-bottom: 0.4rem; height: 2rem; line-height: 2rem; font-size: 1.7rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.listBox li dl dd .infoText .name { padding-top: 0.3rem;}
+.listBox li dl dd .infoText .describe { height: 2rem;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  }
+
+
+/*大图样式*/
+.blueimp-gallery, .blueimp-gallery .slides .slide .slide-content { position: absolute; top: 0; right: 0; bottom: 0; left: 0; 
+-moz-backface-visibility: hidden;/*如果在旋转元素不希望看到其背面时，该属性很有用。*/ transition: opacity .5s linear; }
+
+.blueimp-gallery { position: fixed; background: rgba(0,0,0,.5); opacity: 0; display: none;
+	z-index: 999999; overflow: hidden; /* direction: ltr;rtl 文本方向从右到左*/ /*-ms-touch-action: none; touch-action: none; 禁止触发默认的手势操作*/  }
+.blueimp-gallery-display { display: block; opacity: 1; }
+.blueimp-gallery .slides { position: relative; height: 40rem; overflow: hidden; top: 45%; transform: translateY(-50%); }
+.blueimp-gallery .slides .slide { position: relative; float: left; height: 100%; text-align: center;
+	transition-timing-function: cubic-bezier(0.645, .045, .355, 1); }
+.blueimp-gallery .slides .slide::after { content: ''; width: 60rem; height: 40rem; background-color: #000; position: absolute; top: 0; left: 50%;
+	transform: translateX(-50%); z-index: 1;}
+.blueimp-gallery .slides .slide .slide-content { margin: auto; width: auto; height: auto; width: 60rem; height: auto; opacity: 1; z-index: 2; /*放大图片*/ }
+.blueimp-gallery .listTitle { padding: 0 2rem; margin-top: 22rem; width: 60rem; line-height: 4rem; background: rgba(51,222,192,0.35); 
+	position: absolute; left: 50%; top: 45%; transform: translate(-50%,-50%); }
+.blueimp-gallery .close { padding: 15px; margin: -15px; position: absolute; top: 15px; right: 15px; line-height: 30px; font-size: 30px; color: #fff;
+	text-shadow: 0 0 2px #000; opacity: .8; display: block; text-decoration: none; cursor: pointer; } 
+	
+/*-----------------------------------------
+	施工日志
+-----------------------------------------*/
+.consruLogBox { flex: 1; display: flex; }
+.consruLogBox .LogConLeft { margin-right: 1rem; width: 24rem; display: flex; flex-direction: column; justify-content: space-between; }
+.LogConLeft .LogLefttop { height: 20rem; }
+.LogLefttop .logConBox { flex: 1; display: flex; align-items: center; justify-content: center;  position: relative;  }
+.logConBox .logConCircle { width: 100%; height: 100%; background: url(../images/quslityLogDay.png) no-repeat center; position: absolute; left: 0; top: 0;
+    animation: point_little_animate 30s infinite linear;
+    -moz-animation: point_little_animate 30s infinite linear;
+    -webkit-animation: point_little_animate 30s infinite linear;
+    -o-animation: point_little_animate 30s infinite linear; }
+.logConBox .logConText .num { padding-bottom: 0.25rem; display: block; text-align: center; color:  #33DEC0; font-size: 3rem; }
+.LogConLeft .LogLeftbottom { margin-top: 1rem; flex: 1; }
+
+.LogLeftbottom .LogContent { padding-bottom: 1rem; height: calc(100% - 3.5rem); }
+.LogContent .LogConList li { padding: 1rem 1rem 0;}
+.LogContent .LogConList li dl { display: flex; }
+.LogContent .LogConList li dt { width: 4.5rem;}
+.LogContent .LogConList li dt .nameText { width: 3.5rem; height: 3.5rem; line-height: 3.5rem;  font-size: 2rem; }
+.LogContent .LogConList li dd { padding-top: 0.2rem; width: calc(100% - 4.5rem); }
+.LogContent .LogConList li dd .time { color: rgba(255,255,255,.7); font-size: 1.3rem;}
+.LogContent .LogConList li dd .name { margin-right: 0.75rem;}
+/* 右侧列表 */
+.consruLogBox .nodeConBox { position: relative; }
+.consruLogBox .listBox li { width: calc(33.33% - 1rem);}
+.consruLogBox .listBox li dl dt { width: 5rem; }
+.consruLogBox .listBox li dl dd { width: calc(100% - 6rem); }
+/* 详情 */
+.LogChildBox { height: 100%; display: flex;  }
+.LogDtilLeft { margin-right: 1rem; width: 18rem; display: block; }
+.LogDtilLeft .LogDtilLeftTop { padding: 2rem 0; background: linear-gradient(to right,rgba(19,144,255,.4) 35%, rgba(125,114,245,.2) 100%); overflow: hidden; }
+.LogDtilLeft .LogDtilLeftTop dl { display: flex; align-items: center; }
+.LogDtilLeft .LogDtilLeftTop dt { width: 50%; text-align: right; font-size: 5rem;}
+.LogDtilLeft .LogDtilLeftTop dd { padding-left: 1rem; flex: 1;}
+.LogDtilLeft .LogDtilLeftTop dd .month { font-size: 1.75rem;}
+.LogDtilLeft .LogWeatherAM { padding: 2rem 0 2rem 2rem; display: flex; }
+.LogDtilLeft .LogWeatherAM dt { padding-top: 0.35rem; margin-top: 0.35rem; width: 3.5rem; height: 3.5rem; text-align: center; background: rgba(51,222,192,0.50); border-radius: 0.25rem; }
+.LogDtilLeft .LogWeatherAM dt span { display: block; line-height: 1.35rem; }
+.LogDtilLeft .LogWeatherAM dd { padding: 0 0.5rem 0 1.5rem; flex: 1; }
+.LogDtilLeft .LogWeatherAM:nth-child(3) dt { background: rgba(141,106,38,0.950); }
+
+.LogDtilContent { flex: 1; height: 100%;  position: relative; }
+.LogDtilContent::after { content: ''; width: 9rem; height: 100%; position: absolute; left: 0; top: 0; 
+	background: linear-gradient(to right,rgba(19,144,255,.4) 35%, rgba(125,114,245,.2) 100%);}
+.LogDtilTable { width: 100%; position: relative; z-index: 10; }
+.LogDtilTable th,.LogDtilTable td { padding: 0.75rem 1.5rem;}
+.LogDtilTable th { width: 9rem;  font-weight: normal; }
+
+/* -----------列表记录----------- */
+.DetailBox { flex: 1; }
+.DetailBox .file_listBox { margin: 0; height: 100%;}
+.DetailBox .searchBox .search-icon .fa { right: 0.8rem;}
+.DetailBox .fileTableBox { padding-bottom: 1rem; height: calc(100% - 16rem); overflow: hidden; }
+.DetailBox .pageBox { margin-right: 1.5rem;}
+
+.tabContentBox { padding: 1.5rem; height: calc(100% - 3.5rem);  }
+.tabContentBox .tabTlt { height: 3.5rem; }
+.tabContentBox .tabTlt li { padding: 0 1.5rem; display: inline-block; line-height: 3.5rem; background: linear-gradient(to right,rgba(19,144,255,.59) 35%, rgba(125,114,245,.2) 100%); 
+	font-size: 1.55rem; cursor: pointer; }
+.tabContentBox .tabTlt li.active { color: #33DEC0; }
+.tabContentBox .showtabDetail { display: none; height: calc(100% - 3.5rem); background: rgba(19,54,122,0.5); border: 1px solid rgba(26,208,253,0.2); border-radius: 0.2rem; }
+.tabContentBox .fileTableBox { height: calc(100% - 13rem); }
+
+/* 安全帽识别 */
+.MsafetyHatList .searchBox { justify-content: flex-end; position: relative; }
+.MsafetyHatList .searchBox .MsaListConTopText { position: absolute; left: 1rem; }
+.MsafetyHatList .searchBox .MsaListConTopText .Time { margin-right: 1.5rem;}
+.MsafetyHatList .searchBox .MsaListConTopText em { margin: 0 0.2rem;}
+.MsafetyHatList .listFlex { padding: 1rem 2.6rem; height: calc(100% - 8.5rem); position: relative; }
+.MsafetyHatList .listFlex::before { content: ''; width: 100%; height: 2px; position: absolute; left: 0; top: 0;
+    background: linear-gradient(to right,rgba(4,115,238,.34),rgba(26,208,253,1),rgba(4,115,238,.22)); z-index: 2; }
+.MsafetyHatList .listFlex::after { content: ''; width: 0.25rem; height: 100%; position: absolute; left: 4.25rem; top: 0;
+    background: linear-gradient(to right, rgba(51,222,192,0.3) 0%, rgba(51,222,192,0.7) 50%, rgba(51,222,192,0.3) 100%); }
+.MsafetyHatList .MsafetyTime { padding-left: 3.5rem; height: 4rem; line-height: 4rem; background: url(../images/nodeIon.png) no-repeat left center / 3.5rem 3.5rem; font-size: 1.5rem;
+	position: relative;	z-index: 3;}
+.MsafetyHatList .listBox { margin-left: 2.5rem;}
+.MsafetyHatList .listBox li dl dd { justify-content: center; }
+.MsafetyHatList .listBox li dl dd .infoText { flex: none;}
+
+/*-----------------------------------------
+	个人信息弹窗
+-----------------------------------------*/
+.perInfoMask { padding: 0;}
+.perInfoMask .tabContentBox { padding: 1.5rem 0 0; width: 100%; height: 100%; }
+.perInfoMask .tabContentBox .showtabDetail { }
+.tabContentBox .basisInfo,.tabContentBox .occupatInfo { padding: 1.5rem; display: flex; justify-content: space-between; }
+.basisInfo .headInfo,.tabContentBox .textInfo,.occupatInfo .certBox { width: calc(50% - 1rem); }
+.basisInfo .headInfo { display: flex; align-items: center; }
+.basisInfo .headInfo dt { width: 9rem; text-align: center; font-size: 1.2rem; }
+.basisInfo .headInfo dt img { margin-bottom: 0.5rem; display: block; width: 100%; border: 1px solid #ccc; }
+.basisInfo .headInfo dd { padding-left: 1.5rem; flex: 1;}
+.basisInfo .headInfo dd .person_state_true { padding: 0.35rem 1.5rem; margin: 0.5rem 0 1rem; width: 50%; font-size: 1.2rem; border-top: 1px solid #4cd4a2;
+	 background: url(../images/person_state_true.png) no-repeat left center; }
+.basisInfo .headInfo dd .person_sex { margin-right: 2.5rem;  }
+.basisInfo .headInfo dd .person_sex,.basisInfo .headInfo dd .person_age,.tabContentBox .textInfo dd { color: rgba(255,255,255,.7); }
+.tabContentBox .textInfo dt { float: left; width: 7.5rem; text-align: right; }
+.tabContentBox .textInfo dd { padding: 0 0 1rem 8rem; }
+
+.tabContentBox .occupatInfo { height: 100%; position: relative;}
+.tabContentBox .occupatInfo:after { content: ''; width: 0.15rem; height: 100%; position: absolute; left: 50%; top: 0;
+    background: linear-gradient(to right, rgba(51,222,192,0.3) 0%, rgba(51,222,192,0.7) 50%, rgba(51,222,192,0.3) 100%); }
+.occupatInfo .certBox { padding-left: 1rem;  overflow: hidden;  }
+.occupatInfo .certBox .certImg { padding-top: 1rem; max-width: 100%;}
+
+.tabContentBox .attendanceInfo { height: 100%; }
+.attendanceInfo .searchBox { padding: 0 1rem;  }
+.attendanceInfo .searchBox .dayData { display: flex; flex: 1;  }
+.attendanceInfo .searchBox .dayData p { padding-left: 0.75rem; color: rgba(255,255,255,.7); font-size: 1.2rem; position: relative; }
+.attendanceInfo .searchBox .dayData p:after { content: ''; width: 0.25rem; height: 80%; position: absolute; left: 0; top: 48%; 
+	transform: translateY(-50%); background-color: #54d9eb; }
+.attendanceInfo .searchBox .dayData p span { display: block; font-size: 2rem; color: #fff; }
+.attendanceInfo .searchBox .dayData p:first-child { margin-right: 1.5rem;}
+.attendanceInfo .searchBox .dayData p:first-child:after { background-color: #45aef7;}
+.attendanceInfo .searchBox .searchbar { display: flex; }
+.attendanceInfo .fileTableBox { }
+.attendanceInfo .pageBox { padding-right: 1.5rem;}
+
+/*新增0601*/
+.marginL5 { margin-left: 5px!important;}
+.marginL10 { margin-left: 10px!important;}
+.marginL15 { margin-left: 15px!important;}
+.marginL30 { margin-left: 30px!important;}
+.marginR5 { margin-right: 5px!important;}
+.marginB5 { margin-bottom: 5px!important;}
+.marginB10 { margin-bottom: 10px!important;}
+.marginB15 { margin-bottom: 15px!important;}
+.flexRow { display: flex; align-items: center; }
+.flexColumn { display: flex; flex-direction: column; }
+/* 单选框 */
+.inputRadio { margin-right: 7px; position: relative; display: inline-block;  width: 18px; height: 18px; border: 1px solid rgba(51,222,192,0.9);
+	border-radius: 50%; background: rgba(51,222,192,0.5); outline: none; vertical-align: -4px; z-index: 2;
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; /*改变的浏览器默认风格*/ }
+.inputRadio::after { content: ''; display: block; width: 8px; height: 8px; background: rgba(51,222,192,0.95); border-radius: 50%;
+	position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); opacity: 0;}
+.inputRadio:checked { border-color: rgba(51,222,192,0.5);}
+.inputRadio:checked:after { opacity: 1; }
+.labelRadio { margin-right: 15px; cursor: pointer; }
+
+.DetailBox .file_listBox {}
+.nodeConBox .tabContentBox { padding: 1.5rem 0 0; height: 100%; }
+.nodeConBox .tabContentBox .showtabDetail { border: none; background: none;}
+.InspectAcceptList { padding: 15px; }
+.InspectAcceptList li { padding-bottom: 10px;}
+.InspectAcceptList li.active,.InspectAcceptList li.active a { color: #33DEC0 ;}
+/* 详情 */
+.viewTableBox { padding: 0 15px; height: calc(100% - 10rem);}
+.viewTableBox .client-detail { height: 100%;}
+.viewTableBox .slimScrollDiv { padding-right: 5px;}
+.view_table { border-collapse:collapse; }
+.view_table th,.view_table td { padding: 5px 10px; border: 1px solid rgba(51,222,192,0.9); }
+.view_table th { background: rgba(51,222,192,0.2); }
+.tableImg li { padding: 10px; width: 100px; height: 150px; float: left; }
+.tableImg li img { width: 100%; display: block; }

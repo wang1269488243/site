@@ -1,3 +1,436 @@
 <div id="videoSurveillance">
-	视频监控
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=1366">
+    <meta name="description" content="">
+    <meta name="Keywords" content="">
+    <title>智慧工地</title>
+    <link rel="stylesheet" type="text/css" href="video_files/style.css">
+    <link rel="stylesheet" type="text/css" href="video_files/common.css">
+    <link rel="stylesheet" type="text/css" href="video_files/file.css">
+    <link rel="stylesheet" type="text/css" href="video_files/home.css">
+    <link rel="stylesheet" type="text/css" href="video_files/memorabilia.css">
+    <link rel="stylesheet" type="text/css" href="video_files/videoMonitor.css">
+    <link rel="stylesheet" type="text/css" href="video_files/security.css">
+
+<link type="text/css" rel="stylesheet" href="video_files/laydate_002.css"><link type="text/css" rel="stylesheet" href="video_files/laydate.css" id="LayDateSkin"></head>
+
+<div class="perHomeBox">
+
+	<!--  内容  -->
+	<div class="videoContent">
+		<div class="videoPlayBox" id="videoPlayBox">
+			<div class="ScreenBox oneScreen select">
+				<div data-sort="1"></div><!-- 1画面 -->
+			</div>
+			<!-- 2画面 -->
+			<div class="ScreenBox">
+				<div class="twoScreen">
+					<div class="twosubScreen" data-sort="1"></div>
+					<div class="twosubScreen" data-sort="2"></div>
+				</div>				
+		   </div>
+		   <!-- 3画面 -->
+			<div class="ScreenBox">
+				<div class="threeScreen" id="threeScreen">
+					<div class="three_first" data-sort="1">111</div>
+					<div class="three_second">
+						<div class="three_second1" data-sort="2">222</div>
+						<div class="three_second1" data-sort="3">333</div>
+					</div>
+				</div>								
+		   </div>
+		   <!-- 4画面 -->
+			<div class="ScreenBox">
+				<div class="fourScreen">
+					<div class="foursubScreen">
+						<div class="foursubScreen1" data-sort="1"></div>
+						<div class="foursubScreen1" data-sort="2"></div>
+					</div>
+					<div class="foursubScreen">
+						<div class="foursubScreen1" data-sort="3"></div>
+						<div class="foursubScreen1" data-sort="4"></div>
+					</div>
+				</div>								
+		   </div>
+		   <!-- 6画面 -->
+			<div class="ScreenBox">
+				<div class="sixScreen">
+					<div class="six_first">
+						<div class="six_first_first" data-sort="1"></div>
+						<div class="six_first_second">
+							<div class="six_first_second1" data-sort="2"></div>
+							<div class="six_first_second1" data-sort="3"></div>
+						</div>
+					</div>
+					<div class="six_second">
+						<div class="six_second1" data-sort="4"></div>
+						<div class="six_second1" data-sort="5"></div>
+						<div class="six_second1" data-sort="6"></div>
+					</div>
+				</div>								
+		   </div>
+		   <!-- 8画面 -->
+			<div class="ScreenBox">
+				<div class="eightScreen">
+					<div class="eight_first">
+						<div class="eight_first_first" data-sort="1"></div>
+						<div class="eight_first_second">
+							<div class="eight_subfirst_second" data-sort="2"></div>
+							<div class="eight_subfirst_second" data-sort="3"></div>
+							<div class="eight_subfirst_second" data-sort="4"></div>
+						</div>
+					</div>
+					<div class="eight_second">
+						<div class="eight_subsecond" data-sort="5"></div>
+						<div class="eight_subsecond" data-sort="6"></div>
+						<div class="eight_subsecond" data-sort="7"></div>
+						<div class="eight_subsecond" data-sort="8"></div>
+					</div>
+				</div>				
+		   </div>
+		   <!-- 8画面 -->
+			<div class="ScreenBox">
+				<div class="nineScreen">
+					<div class="nine_first" data-sort="1"></div>
+					<div class="nine_first" data-sort="2"></div>
+					<div class="nine_first" data-sort="3"></div>
+					<div class="nine_first" data-sort="4"></div>
+					<div class="nine_first" data-sort="5"></div>
+					<div class="nine_first" data-sort="6"></div>
+					<div class="nine_first" data-sort="7"></div>
+					<div class="nine_first" data-sort="8"></div>
+					<div class="nine_first" data-sort="9"></div>
+				</div>				
+		   </div>
+		</div>		
+		<div class="rightBtn"></div>
+	</div>
+	<!--  内容 end -->
+	<!--  列表区  -->
+	<div class="videoListBox">
+		<!--  视图控制  -->
+		<div class="videoControl bgBox">
+			<h2 class="bigTitle"><em class="shadowbg"></em><i class="fa fa-film"></i>视图控制</h2>
+			<div class="videoControlCon">
+				<dl class="one select" data-value="1"> <dt></dt> <dd>1画面</dd> </dl>
+				<dl class="two" data-value="2"> <dt></dt> <dd>2画面</dd> </dl>
+				<dl class="three" data-value="3"> <dt></dt> <dd>3画面</dd> </dl>
+				<dl class="four" data-value="4"> <dt></dt> <dd>4画面</dd> </dl>
+				<dl class="six" data-value="6"> <dt></dt> <dd>6画面</dd> </dl>
+				<dl class="eight" data-value="8"> <dt></dt> <dd>8画面</dd> </dl>
+				<dl class="nine" data-value="9"> <dt></dt> <dd>9画面</dd> </dl>
+			</div>
+		</div>
+		<!--   视频点   -->
+		<div class="videoPointList bgBox">
+			<h2 class="bigTitle"><em class="shadowbg"></em><i class="fa fa-video-camera"></i>视频点</h2>
+			<div class="videoListCon client-detai">
+				<div class="slimScrollDiv" style="position: relative; width: auto; height: 425px;"><div class="full-height-scroll" style="width: auto; height: 425px;">
+					<ul class="ListCon" id="videoList"><li class="videoCon">
+        <h2 class="title">2-1号吊钩</h2>
+		<input type="hidden" id="deviceId" value="1268398163766226946">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-1号驾驶室</h2>
+		<input type="hidden" id="deviceId" value="1273099431214465026">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-2号吊钩</h2>
+		<input type="hidden" id="deviceId" value="1273099636991213570">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-2号驾驶室</h2>
+		<input type="hidden" id="deviceId" value="1273099827815268354">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-3号吊钩</h2>
+		<input type="hidden" id="deviceId" value="1273100107243995137">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-3号驾驶室</h2>
+		<input type="hidden" id="deviceId" value="1273100193495752706">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-4号吊钩</h2>
+		<input type="hidden" id="deviceId" value="1273100300773376001">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-4号驾驶室</h2>
+		<input type="hidden" id="deviceId" value="1273100395560542210">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-5号驾驶室</h2>
+		<input type="hidden" id="deviceId" value="1273100474581139457">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-东南角监控</h2>
+		<input type="hidden" id="deviceId" value="1273100650167377922">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li><li class="videoCon">
+        <h2 class="title">2-东北角监控</h2>
+		<input type="hidden" id="deviceId" value="1273100749559709698">
+        <img src="video_files/default.png" alt="">
+        <div class="selectControl">
+            <ul>
+                <li onclick="getSource($(this))">1</li>
+            </ul>
+        </div>
+	</li></ul>
+				</div><div class="slimScrollBar" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 117.289px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+			</div>
+		</div>
+	</div>
+	<!--  列表区 end -->
+</div>
+
+
+<!--详情弹窗-->
+<script type="text/javascript" src="video_files/jquery-1.js"></script>
+<script type="text/javascript" src="video_files/jquery_005.js"></script>
+<script type="text/javascript" src="video_files/touchSlider.js"></script>
+
+
+<!-- 溢出滚动 -->
+<script type="text/javascript" src="video_files/jquery.js"><!--详情弹窗--></script>
+
+
+<!--左侧树js-->
+<script type="text/javascript" src="video_files/yx.js"></script>
+<link rel="stylesheet" href="video_files/zTreeStyle.css" type="text/css">
+<script type="text/javascript" src="video_files/jquery_004.js"></script>
+
+<!-- echarts -->
+
+ <!--blueimp-gallery 放大图片显示 end-->
+<script src="video_files/jquery_002.js"> <!-- 放大图片显示 end--></script>
+
+
+
+<!-- 表单提交等ajax方法 -->
+<script type="text/javascript" src="video_files/HFAjax.js"></script>
+<!-- 通用方法 -->
+<script type="text/javascript" src="video_files/js_func.js"></script>
+<script type="text/javascript" src="video_files/template.js"></script>
+<script src="video_files/carousel.js" type="text/javascript"></script>
+<!-- 弹窗 -->
+<script type="text/javascript" src="video_files/dialog-plus-min.js"></script>
+<!-- 编辑框 -->
+<script type="text/javascript" src="video_files/kindeditor-all.js"></script>
+<script type="text/javascript" charset="utf-8" src="video_files/zh-CN.js"></script>
+
+
+
+<!-- 轮播图 -->
+
+<!-- 日历 -->
+<script src="video_files/laydate.js"></script><script type="text/javascript" src="video_files/jquery_003.js"></script>
+
+<script type="text/html" id="videoInfo">
+    <li class="videoCon" >
+        <h2 class="title">{{brand}}</h2>
+		<input type="hidden" id="deviceId" value="{{videoId}}">
+        <img src="https://goyoimg.oss-cn-shanghai.aliyuncs.com/123/default.png" alt="">
+        <div class="selectControl" >
+            <ul>
+                <li onclick='getSource($(this))'>1</li>
+            </ul>
+        </div>
+	</li>
+</script>
+
+<script type="text/html" id="videoInfo2">
+    <video
+            id="myPlayer_{{index}}"
+            poster=""
+            [autoplay]
+            controls
+            playsInline
+            webkit-playsinline
+            width="100%" height="100%" >
+        <source src="{{hdAddress}}" type="application/x-mpegURL"/>
+    </video>
+</script>
+<script type="text/javascript" src="video_files/ezuikit.js"></script>
+<script type="text/javascript">
+    var player;
+
+    $(function(){
+
+		<!-- 溢出滚动 -->
+		$(".full-height-scroll").slimScroll({height:"425px"});
+		
+		<!-- 点击列表区展示隐藏 -->
+		$(".rightBtn").click(function(){
+			$('.videoListBox').toggleClass("videoListBoxNone");
+		});		
+		
+		$(".videoControlCon dl").click(function(){			
+			// 加自己当前状态
+			$(".videoControlCon dl").removeClass("select");
+			$(this).addClass("select");
+			
+			//视频区切换显示
+			$(".ScreenBox").removeClass("select");
+			$(".ScreenBox").eq($(this).index()).addClass("select");
+			
+			//视频点列表更新视图
+			var num = parseInt($(this).attr("data-value"));
+			$(".videoCon .selectControl ul").html("");
+			for(var i=1;i<=num;i++ ){
+				$(".videoCon .selectControl ul").append("<li onclick='getSource($(this))'>"+i+"</li>")
+			}
+			
+		});
+        videoList();
+
+
+
+	});
+
+    /**
+	 * 获取视频监控设备
+     */
+	function  videoList() {
+        HFAjax("/smartsite/showPlatform/a/video/vidoeList.do", "", function (result) {
+            var list=result.result;
+            $("#videoList").empty();
+            for(var i in list){
+                // getSource(list[i],i);
+                var object={
+                    hdAddress:list[i].hdAddress,
+                    brand:list[i].deviceName,
+                    videoId:list[i].id
+                }
+
+                $("#videoList").append(template('videoInfo',object));
+			}
+		})
+    }
+
+    /**
+	 * 根据监控设备ID获取视频源
+     */
+    function  getSource(obj){
+    var parentNode=obj.parent().parent().parent();//获取父节点li
+    var itemId=parentNode.children("input").val();//获取videoId
+        var indexs=obj.text();//获取点击的哪个数字，需要在哪个宫格显示
+
+        /*获取视频控制角标*/
+        var screenIndex=$(".videoControlCon dl").filter(".select").attr("data-value");
+
+                if(parseInt(screenIndex)<=9) {//画面1
+                    //视频在大屏显示的位置
+                    if (indexs) {//角标1=最先的位置
+                        /*根据screenIndex判断大屏是展示几个窗口*/
+                        var videoHtml='<iframe class="J_iframe" name="videoInfo" id="videoInfo'+indexs+'" width="100%" height="100%" src="/smartsite//showPlatform/v/video.do?itemId='+itemId+'" frameborder="0"></iframe>'
+						// console.log("sss"+$('iframe[id=videoInfo'+indexs+']').length);
+                        if ($('iframe[id=videoInfo'+indexs+']').length> 0) {
+                            document.getElementById('videoInfo'+indexs).contentWindow.stopVideo();
+                            $('#videoInfo'+indexs).remove();
+                        }
+                        if (parseInt(screenIndex) == 1) {
+                            $(".oneScreen>div[data-sort='" + indexs + "']").html(videoHtml);
+                        } else if (parseInt(screenIndex) == 2) {
+                            $(".twoScreen>div[data-sort='" + indexs + "']").html(videoHtml);
+                        } else if (parseInt(screenIndex) == 3) {
+                            $(".threeScreen div[data-sort='" + indexs + "']").html(videoHtml);
+                        } else if (parseInt(screenIndex) == 4) {
+                            $(".fourScreen div[data-sort='" + indexs + "']").html(videoHtml);
+                        } else if (parseInt(screenIndex) == 6) {
+                            $(".sixScreen div[data-sort='" + indexs + "']").html(videoHtml);
+                        } else if (parseInt(screenIndex) == 8) {
+                            $(".eightScreen div[data-sort='" + indexs + "']").html(videoHtml);
+                        } else if (parseInt(screenIndex) == 9) {
+                            $(".nineScreen div[data-sort='" + indexs + "']").html(videoHtml);
+                        }
+                    }
+                }
+    }
+
+
+    function  setVideo(obj){
+            var parentNode=obj.parent();//获取父节点li
+            var itemId=parentNode.children("input").val();//获取videoId
+            var indexs=obj.text();//获取点击的哪个数字，需要在哪个宫格显示
+
+            /*获取视频控制角标*/
+            var screenIndex=$(".videoControlCon dl").filter(".select").attr("data-value");
+
+            if(parseInt(screenIndex)<=9) {//画面1
+                //视频在大屏显示的位置
+                if (indexs) {//角标1=最先的位置
+                    /*根据screenIndex判断大屏是展示几个窗口*/
+                    var videoHtml='<iframe class="J_iframe" name="videoInfo" id="videoInfo" width="100%" height="100%" src="/smartsite//showPlatform/v/video.do?itemId='+itemId+'" frameborder="0"></iframe>'
+                    if (parseInt(screenIndex) == 1) {
+                        $(".oneScreen>div[data-sort='" + 1 + "']").html(videoHtml);
+                    } else if (parseInt(screenIndex) == 2) {
+                        $(".twoScreen>div[data-sort='" + 1 + "']").html(videoHtml);
+                    } else if (parseInt(screenIndex) == 3) {
+                        $(".threeScreen div[data-sort='" + 1 + "']").html(videoHtml);
+                    } else if (parseInt(screenIndex) == 4) {
+                        $(".fourScreen div[data-sort='" + 1 + "']").html(videoHtml);
+                    } else if (parseInt(screenIndex) == 6) {
+                        $(".sixScreen div[data-sort='" + 1 + "']").html(videoHtml);
+                    } else if (parseInt(screenIndex) == 8) {
+                        $(".eightScreen div[data-sort='" + 1 + "']").html(videoHtml);
+                    } else if (parseInt(screenIndex) == 9) {
+                        $(".nineScreen div[data-sort='" + 1 + "']").html(videoHtml);
+                    }
+                }
+            }
+    }
+</script>
+
+</body></html>
 </div>
