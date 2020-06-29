@@ -1,0 +1,167 @@
+<div class="right">
+    <div class="right-head">
+        <p>升降机监控</p>
+    </div>
+    <div class="main">
+        <div class="main-top">
+            <div class="right-l">
+                <p>在线设备</p>
+                <p><span>0</span>台</p>
+            </div>
+            <div class="right-r">
+                <p>离线设备</p>
+                <p><span>1</span>台</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test" id="nav">
+                  <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">在线设备</a>
+                  </li>
+                  <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">离线设备</a>
+                    <dl class="layui-nav-child">
+                      <dd><a class="active" href="javascript:;" data-id="2" data-height="0"  data-left="0">8#楼升降机监测系统</a></dd>
+                    </dl>
+                  </li>
+                </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+   <div class="content-head">
+       <p>8#楼升降机监测系统 设备编号（3504505）</p>
+   </div> 
+   <div class="content-top">
+    <div class="content-left">
+        <div class="left-item">
+            <div class="item-head">
+                <p>今日报警</p>
+            </div>
+            <div class="item-main">
+                <div class="main-left">
+                    <p>预警</p>
+                    <p style="color: #f8aa20;font-size: 20px;">0</p>
+                </div>
+                <div class="main-left">
+                    <p>报警</p>
+                    <p style="color: red;font-size: 20px;">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="left-item">
+            <div class="item-head">
+                <p>设备信息</p>
+            </div>
+           <div style="padding: 10px;">
+            <div class="main-left">
+                <p>总高度：0.4m</p>
+            </div>
+            <div class="main-left">
+                <p>总层数：30层</p>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="content-right">
+        <div class="right-item">
+            <p>
+                <span>高度</span>
+                <span style="color: #33DEC0;">正常</span>
+            </p>
+            <p><span>0.4</span>m</p>
+            <div class="layui-progress">
+                <div class="layui-progress-bar" lay-percent="13%"></div>
+            </div>
+        </div>
+        <div class="right-item">
+            <p>
+                <span>重量</span>
+                <span style="color: #33DEC0;">正常</span>
+            </p>
+            <p><span>0</span>t</p>
+            <div class="layui-progress">
+                <div class="layui-progress-bar" lay-percent="0%"></div>
+            </div>
+        </div>
+        <div class="right-item" style="background: rgba(255,80,120,0.30);">
+            <p>
+                <span>速度</span>
+                <span style="color: red;">报警</span>
+            </p>
+            <p style="color: red;"><span>0</span>m/s</p>
+            <div class="layui-progress">
+                <div class="layui-progress-bar" lay-percent="0"></div>
+            </div>
+        </div> 
+    </div>
+    <div class="content-main">
+        <div class="main-content-img-2">
+        </div>
+    </div>
+   </div>
+   <div class="content-bottom">
+       <div class="bottom-left-1">
+           <div class="bottom-left-head">
+               <p>历史记录</p>
+           </div>
+           <div id="lines"></div>
+       </div>
+      
+   </div>
+</div>
+<script>
+      $('#nav').click((e) => {
+        if ($(e.target).data('id')) {
+            $(e.target).parent().parent().parent().parent().find('.active').removeClass('active');
+            $(e.target).addClass('active');
+            const height = $(e.target).data('height');
+            const left = $(e.target).data('left');
+            $('.tower_hook').css({
+            left: '0px',
+            height: '0%',
+            overflow: 'hidden',
+        });
+           setTimeout(() => {
+            $('.tower_hook').animate({
+            left: `${left}px`,
+            height: `${height}%`,
+        });
+           }, 1000);
+        }
+    });
+    const line = echarts.init(document.querySelector('#lines'));
+    const lineOption = {
+        xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        axisLine: {
+                onZero: true,
+                lineStyle: {
+                    color: '#fff'
+                }
+            }
+    },
+    yAxis: {
+        type: 'value',
+        axisLine: {
+                onZero: true,
+                lineStyle: {
+                    color: '#fff'
+                }
+            }
+    },
+    series: [{
+        data: [120, 200, 150, 80, 70, 110, 130],
+        type: 'bar',
+        showBackground: true,
+        backgroundStyle: {
+            color: 'rgba(220, 220, 220, 0.8)'
+        },
+        areaStyle: {
+                color: '#fff'
+            }
+    }]
+    };
+    line.setOption(lineOption);
+</script>

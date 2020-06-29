@@ -28,13 +28,13 @@ $('.menu-right ul li').on('click',function(){
 	$('.menu-left ul li').removeClass('menu-choose');
 	var index = $(this).index();
 	if(index == 0){
-		$('.contentbody').load('./intelligentHardware.html');
+		$('.contentbody').load('pages/intelligentHardware/index.html');
 	}else if(index == 1){
-		$('.contentbody').load('./intelligenceApplications.html');
+		$('.contentbody').load('pages/intelligenceApplications/index.html');
 	}else if(index == 2){
-		$('.contentbody').load('./dataManagement.html');
+		$('.contentbody').load('pages/dataManagement/index.html');
 	}else if(index == 3){
-		$('.contentbody').load('./nodeAcceptance.html');
+		$('.contentbody').load('pages/nodeAcceptance/index.html');
 	}else if(index == 4){
 		$('.contentbody').load('./mySite.html');
 	}

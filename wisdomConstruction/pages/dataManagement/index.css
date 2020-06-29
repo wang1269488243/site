@@ -1,0 +1,67 @@
+.file-management {
+    margin-top: 10px;
+}
+.layui-card {
+    margin: 0 10px;
+    background: rgba(19,54,122,0.5);
+    border: 1px solid rgba(26,208,253,0.2);
+}
+.layui-card-header {
+    border: none;
+    background: linear-gradient(to right,#2190BF, #02085E);
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.layui-card-header .iconfont {
+    margin-right: 10px;
+}
+.layui-tree-line .layui-tree-entry:hover .layui-tree-txt {
+    color: #fff;
+}
+.layui-tree-txt {
+    color: #fff;
+}
+.active .layui-tree-main {
+    background: rgba(51, 222, 192, 0.9);
+}
+.layui-table-view {
+    margin: 0;
+    border-width: 0px;
+    
+}
+
+.layui-table-view table {
+    background: rgba(19,54,122,0.5);
+    border: 1px solid rgba(26,208,253,0.2);
+}
+.layui-table-header {
+    background: none;
+    border: none;
+}
+.layui-table-view .layui-table thead tr {
+    background: linear-gradient(to right,#2190BF, #02085E);
+}
+
+.layui-table-view .layui-table th {
+    padding: 8px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.layui-table tbody tr td {
+    color: #fff;
+}
+
+.layui-table tbody tr td a {
+    color: rgba(51,222,192);   
+}
+
+.layui-table tbody tr:hover {
+    background: none;
+}
+
+.layui-table[lay-even] tbody tr:nth-child(even) {
+    background: rgba(51,222,192,0.2);
+}
