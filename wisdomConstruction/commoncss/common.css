@@ -143,5 +143,6 @@ ul li.menu-choose{
 	font-size: 20px;
 }
 .contentbody{
-	color: #fff;
+    color: #fff;
+    height: 100%;
 }

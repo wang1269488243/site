@@ -1,9 +1,11 @@
 .intelligence-application {
     margin: 10px;
+    height: 100%;
 }
 
 .left {
     margin-left: 160px;
+    height: 100%;
 }
 
 .left-tab {
@@ -80,7 +82,7 @@
 .right {
     float: left;
     width: 150px;
-    height: 600px;
+    height: calc(100% - 130px);
     background: rgba(19,54,122,0.5);
     border: 1px solid rgba(26,208,253,0.2);
 }
@@ -183,6 +185,7 @@
     margin-top: 10px;
     background: rgba(19,54,122,0.5);
     border: 1px solid rgba(26,208,253,0.2);
+    height: calc(100% - 470px);
 }
 
 .bottom .bottom-head {

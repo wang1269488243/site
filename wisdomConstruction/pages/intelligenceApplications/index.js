@@ -96,6 +96,7 @@
            return newTimer
     }
     document.querySelector('#bottom-content').style.width=(document.querySelector('.intelligence-application').clientWidth - 182)+'px';
+    document.querySelector('#bottom-content').style.height=(document.querySelector('.intelligence-application').clientHeight - 170)+'px';
     const bottomChart = echarts.init(document.querySelector('#bottom-content'));
     const data = timeForMat(7);
     const bottomOption = {

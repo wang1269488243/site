@@ -1,5 +1,6 @@
 .node-acceptance {
     margin: 10px;
+    height: 100%;
 }
 
 .node-acceptance .head {
@@ -34,7 +35,7 @@
 }
 .node-acceptance .body {
     border: 1px solid rgba(26,208,253,0.2);
-    height: 600px;
+    height: calc(100% - 130px);
 }
 
 .layui-table-view {
